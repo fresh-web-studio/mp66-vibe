@@ -1,13 +1,11 @@
-import { Head } from "minista"
-import Example from '@/components/Example.jsx'
+export const metadata = {
+  title: '',
+}
 
 export default function () {
   return (
     <>
-      <Head>
-        <title>Hello!</title>
-      </Head>
-      <Example />
+      <h1>Главная</h1>
     </>
   )
 }

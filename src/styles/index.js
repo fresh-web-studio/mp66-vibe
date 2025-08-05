@@ -1,5 +1,5 @@
-import '@a1rth/css-normalize/index.css'
+import '@a1rth/css-normalize'
 import './fonts.scss'
-import './varibies.scss'
+import './variables.scss'
 import './utils.scss'
 import './globals.scss'

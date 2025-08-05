@@ -1,4 +1,5 @@
 import { Head } from "minista"
+import Example from '@/components/Example.jsx'
 
 export default function () {
   return (
@@ -6,7 +7,7 @@ export default function () {
       <Head>
         <title>Hello!</title>
       </Head>
-      <h1>Hello!</h1>
+      <Example />
     </>
   )
 }

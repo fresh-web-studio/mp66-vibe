@@ -1,7 +1,7 @@
 $laptop: 1440px;
 $tablet: 1023px;
-$mobile: 676px;
-$mobilee-s: 480px;
+$mobile: 767px;
+$mobile-s: 480px;
 
 @mixin laptop-above {
     @media (width > $laptop) {
@@ -21,7 +21,7 @@ $mobilee-s: 480px;
     }
 }
 
-@mixin tablete {
+@mixin tablet {
     @media (width <=$tablet) {
         @content;
     }
@@ -54,7 +54,7 @@ $mobilee-s: 480px;
 @mixin hover($hasActiveEffectOnMobile: true) {
     @media (any-hover: hover) {
         &:hover {
-            @content
+            @content;
         }
     }
 

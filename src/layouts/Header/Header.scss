@@ -1,0 +1,61 @@
+.header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    padding-block: fluid(22, 14);
+    border-bottom: var(--border-wigth-s) solid transparent;
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+
+
+    @keyframes scrolling-header {
+        to {
+            //background-color: var(--color-black);
+            border-color: var(--color-black);
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__menu-list {
+        display: flex;
+        align-items: center;
+        column-gap: 2px;
+        //justify-content: space-around;
+    }
+
+    &__menu-link {
+        padding: fluid-to-laptop(38, 25) fluid-to-laptop(38, 25);
+        color: var(--color-dark-blue);
+        text-transform: uppercase;
+        font-size: 18px;
+
+        &.is-active {
+            background-color: var(--color-blue);
+            color: var(--color-white);
+            pointer-events: none;
+        }
+
+        @include hover {
+            color: var(--color-white);
+            background-color: var(--color-blue);
+        }
+    }
+
+
+}

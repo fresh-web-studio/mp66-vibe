@@ -42,13 +42,28 @@
         height: 100%;
         padding: var(--container-padding-x);
         border: none;
+        transition-duration: var(--transition-duration);
+        transition-behavior: allow-discrete;
 
         @include mobile-above {
             display: contents;
         }
 
+        @mixin starting-style {
+            opacity: 0;
+            translate: 50%;
+        }
+
         &[open] {
             display: flex;
+
+            @starting-style {
+                @include starting-style;
+            }
+        }
+
+        &:not([open]) {
+            @include starting-style;
         }
     }
 

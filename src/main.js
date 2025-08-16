@@ -1,1 +1,3 @@
-console.log('Привет из файла main.js');
+import OverlayMenu from "@/modules/OverlayMenu";
+
+new OverlayMenu()

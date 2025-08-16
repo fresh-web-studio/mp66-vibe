@@ -29,7 +29,7 @@ const Header = (props) => {
         },
     ]
     return (
-        <header className="header">
+        <header className="header" data-js-overlay-menu="">
             <div className="header__contacts hidden-mobile container">
                 <div>Нижний Тагил, ул.Краснознаменная, 55</div>
                 <div><a href="tel:%2B7%28912%29229-09-85">+7 (912) 229-09-85</a>, <a href="tel:%2B7%28912%29030-85-08">+7 (912) 030-85-08</a></div>
@@ -40,7 +40,10 @@ const Header = (props) => {
                     className="header__logo"
                     loading="eager"
                 />
-                <dialog className="header__overlay-menu-dialog">
+                <dialog
+                    className="header__overlay-menu-dialog"
+                    data-js-overlay-menu-dialog=""
+                >
                     <nav className="header__menu">
                         <ul className="header__menu-list">
                             {menuItems.map(({ label, href }, index) => (
@@ -61,7 +64,11 @@ const Header = (props) => {
                 </dialog>
 
                 <BurgerButton
-                    className="header__burger-button visible-mobile" />
+                    className="header__burger-button visible-mobile"
+                    extraAttrs={{
+                        'data-js-overlay-menu-burger-button': '',
+                    }}
+                />
             </div>
 
 

@@ -8,8 +8,8 @@
 
 
     @include hover {
-        background-color: var(--color-blue);
-        stroke: var(--color-white);
+        //background-color: var(--color-blue);
+        //stroke: var(--color-white);
     }
 
     &.is-active {
@@ -46,7 +46,7 @@
         }
 
         @include hover {
-            stroke: var(--color-white);
+            //stroke: var(--color-white);
         }
     }
 }

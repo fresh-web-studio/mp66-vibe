@@ -9,6 +9,7 @@
 
     @include hover {
         background-color: var(--color-blue);
+        stroke: var(--color-white);
     }
 
     &.is-active {

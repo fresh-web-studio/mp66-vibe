@@ -3,12 +3,13 @@
     z-index: 100;
     top: 0;
     width: 100%;
-    padding-block: fluid(22, 14);
+    //padding-top: fluid(22, 14);
     border-bottom: var(--border-wigth-s) solid transparent;
     animation-name: scrolling-header;
     animation-fill-mode: both;
     animation-timeline: scroll();
     animation-range: 0 100px;
+    box-shadow: 0px 3px 8px 0px rgba(119, 119, 119, .3);
 
 
     @keyframes scrolling-header {
@@ -32,30 +33,74 @@
         column-gap: 16px;
     }
 
-    &__menu-list {
-        display: flex;
-        align-items: center;
-        column-gap: 2px;
-        //justify-content: space-around;
-    }
+    &__overlay-menu-dialog {
+        position: fixed;
+        justify-content: center;
+        row-gap: 16px;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        padding: var(--container-padding-x);
+        border: none;
 
-    &__menu-link {
-        padding: fluid-to-laptop(38, 25) fluid-to-laptop(38, 25);
-        color: var(--color-dark-blue);
-        text-transform: uppercase;
-        font-size: 18px;
-
-        &.is-active {
-            background-color: var(--color-blue);
-            color: var(--color-white);
-            pointer-events: none;
+        @include mobile-above {
+            display: contents;
         }
 
-        @include hover {
-            color: var(--color-white);
-            background-color: var(--color-blue);
+        &[open] {
+            display: flex;
         }
     }
 
+    &__menu {
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            overflow-y: auto;
+            width: inherit;
+        }
+
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 2px;
+            //justify-content: space-around;
+
+            @include mobile {
+                flex-direction: column;
+                row-gap: 12px;
+                margin-block: auto;
+            }
+        }
+
+        &-link {
+            padding: fluid-to-laptop(38, 25) fluid-to-laptop(30, 10);
+            color: var(--color-dark-blue);
+            text-transform: uppercase;
+            font-size: fluid(18, 14);
+            font-weight: 700;
+
+            &.is-active {
+                background-color: var(--color-blue);
+                color: var(--color-white);
+                pointer-events: none;
+            }
+
+            @include mobile-above {
+                @include hover {
+                    color: var(--color-white);
+                    background-color: var(--color-blue);
+                }
+            }
+
+        }
+
+    }
+
+    &__burger-button {
+        position: relative;
+    }
 
 }

@@ -2,7 +2,7 @@ export const metadata = {
   title: '',
 }
 
-export default function () {
+export default () => {
   return (
     <>
       <h1>Главная</h1>

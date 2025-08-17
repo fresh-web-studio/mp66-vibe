@@ -21,10 +21,10 @@ export default function (props) {
             <Head htmlAttributes={{ lang: 'ru' }}>
                 <title>{title}МеталлПром: прием металлолома, лом черных и цветных металлов в Нижнем Тагиле и Свердловской области</title>
                 <script src="/src/main.js" type='module' />
-                <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
-                <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
-                <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
-                <link rel="manifest" href={manifest} />
+                <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+                <link rel="manifest" href="/assets/favicons/site.webmanifest" />
             </Head>
             <Header url={url} />
             <Content>

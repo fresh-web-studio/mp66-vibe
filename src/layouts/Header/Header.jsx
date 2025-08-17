@@ -13,7 +13,7 @@ const Header = (props) => {
     const menuItems = [
         {
             label: 'О компании',
-            href: './o-kompanii',
+            href: '/o-kompanii',
         },
         {
             label: 'Услуги',

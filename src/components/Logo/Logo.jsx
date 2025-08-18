@@ -17,7 +17,7 @@ const Logo = (props) => {
             aria-label={title} >
             <img
                 className="logo__image"
-                src="/mp66-vibe/assets/images/logo.svg"
+                src={logoImgSrc}
                 alt=""
                 width={400}
                 height={100}

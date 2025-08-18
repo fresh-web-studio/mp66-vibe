@@ -42,6 +42,10 @@
         align-items: center;
         column-gap: 16px;
         background-color: var(--color-white);
+
+        @include mobile {
+            padding-right: 0;
+        }
     }
 
     &__overlay-menu-dialog {

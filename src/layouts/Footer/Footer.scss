@@ -49,6 +49,7 @@
     &__copyright {
         text-align: center;
         padding: 10px;
+        @include fluid-text(20, 14);
 
         a {
             color: var(--color-gray-blue);

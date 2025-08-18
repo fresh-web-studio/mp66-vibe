@@ -6,10 +6,8 @@
     background-color: var(--color-white);
     border-color: transparent;
 
-
     @include hover {
-        //background-color: var(--color-blue);
-        //stroke: var(--color-white);
+        background-color: var(--color-blue);
     }
 
     &.is-active {
@@ -43,10 +41,6 @@
 
         &--2 {
             stroke-dasharray: 60 60;
-        }
-
-        @include hover {
-            //stroke: var(--color-white);
         }
     }
 }

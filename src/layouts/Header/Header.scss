@@ -124,6 +124,16 @@
                 }
             }
 
+            &.is-submenu-trigger {
+                cursor: pointer; // Чтобы выглядело как активная ссылка
+                user-select: none; // Заблокировать выделение текста
+                pointer-events: none; // Сделать не кликабельным на десктопах
+
+                @include mobile {
+                    pointer-events: all; // Возвращаем кликабельность на мобилках
+                }
+            }
+
             @include mobile-above {
                 @include hover {
                     color: var(--color-white);

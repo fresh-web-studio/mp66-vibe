@@ -48,7 +48,15 @@ const Header = (props) => {
             label: 'Контакты',
             href: '/contacts',
         },
-    ]
+    ];
+
+    const handleSubmenuToggle = (event) => {
+        const submenu = event.currentTarget.nextElementSibling;
+        if (submenu) {
+            submenu.classList.toggle('header__submenu_visible');
+        }
+    };
+
     return (
         <header className="header" data-js-overlay-menu="">
             <div className="header__contacts">
@@ -71,14 +79,23 @@ const Header = (props) => {
                         <ul className="header__menu-list">
                             {menuItems.map(({ label, href, subLink }, index) => (
                                 <li className="header__menu-item" key={index}>
-                                    <a
-                                        className={classNames('header__menu-link', {
-                                            'is-active': href === url,
-                                        })}
-                                        href={`${basePath}${href}`}
-                                    >
-                                        {label}
-                                    </a>
+                                    {subLink && subLink.length > 0 ? (
+                                        <a
+                                            className={classNames('header__menu-link', 'is-submenu-trigger')}
+                                            onClick={handleSubmenuToggle}
+                                        >
+                                            {label}
+                                        </a>
+                                    ) : (
+                                        <a
+                                            className={classNames('header__menu-link', {
+                                                'is-active': href === url,
+                                            })}
+                                            href={`${basePath}${href}`}
+                                        >
+                                            {label}
+                                        </a>
+                                    )}
                                     {subLink && subLink.length > 0 && (
                                         <ul className="header__submenu">
                                             {subLink.map(({ sublabel, href }, idx) => (

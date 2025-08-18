@@ -1,0 +1,77 @@
+{
+  "_index-c19c2a75.js": {
+    "css": [
+      "assets/index.css"
+    ],
+    "file": "assets/index-c19c2a75.js"
+  },
+  "index.css": {
+    "file": "assets/index.css",
+    "src": "index.css"
+  },
+  "node_modules/minista/dist/server/bundle.css": {
+    "file": "assets/bundle.css",
+    "src": "node_modules/minista/dist/server/bundle.css"
+  },
+  "node_modules/minista/dist/server/bundle.js": {
+    "assets": [
+      "assets/fonts/Ubuntu-Regular.woff2",
+      "assets/fonts/Ubuntu-Bold.woff2",
+      "assets/fonts/Ubuntu-Light.woff2"
+    ],
+    "css": [
+      "assets/bundle.css",
+      "assets/styles.css"
+    ],
+    "file": "assets/__minista_plugin_bundle.js",
+    "imports": [
+      "_index-c19c2a75.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/minista/dist/server/bundle.js"
+  },
+  "src/assets/favicons/apple-touch-icon.png": {
+    "file": "assets/images/apple-touch-icon.png",
+    "src": "src/assets/favicons/apple-touch-icon.png"
+  },
+  "src/assets/favicons/favicon-16x16.png": {
+    "file": "assets/images/favicon-16x16.png",
+    "src": "src/assets/favicons/favicon-16x16.png"
+  },
+  "src/assets/favicons/favicon-32x32.png": {
+    "file": "assets/images/favicon-32x32.png",
+    "src": "src/assets/favicons/favicon-32x32.png"
+  },
+  "src/assets/favicons/site.webmanifest": {
+    "file": "assets/site.webmanifest",
+    "src": "src/assets/favicons/site.webmanifest"
+  },
+  "src/assets/fonts/Ubuntu-Bold.woff2": {
+    "file": "assets/fonts/Ubuntu-Bold.woff2",
+    "src": "src/assets/fonts/Ubuntu-Bold.woff2"
+  },
+  "src/assets/fonts/Ubuntu-Light.woff2": {
+    "file": "assets/fonts/Ubuntu-Light.woff2",
+    "src": "src/assets/fonts/Ubuntu-Light.woff2"
+  },
+  "src/assets/fonts/Ubuntu-Regular.woff2": {
+    "file": "assets/fonts/Ubuntu-Regular.woff2",
+    "src": "src/assets/fonts/Ubuntu-Regular.woff2"
+  },
+  "src/assets/images/logo.svg": {
+    "file": "assets/images/logo.svg",
+    "src": "src/assets/images/logo.svg"
+  },
+  "src/main.js": {
+    "file": "assets/main.js",
+    "imports": [
+      "_index-c19c2a75.js"
+    ],
+    "isEntry": true,
+    "src": "src/main.js"
+  },
+  "styles.css": {
+    "file": "assets/styles.css",
+    "src": "styles.css"
+  }
+}

@@ -25,6 +25,7 @@ export default function (props) {
                 <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
                 <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
                 <link rel="manifest" href={manifest} />
+                <link rel="stylesheet" href="/mp66-vibe/assets/index.css"></link>
             </Head>
             <Header url={url} />
             <Content>

@@ -15,7 +15,6 @@ const Hero = () => {
                             className="hero__button"
                             label="Подробнее"
                         />
-
                     </div>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 export const metadata = {
-    title: 'Цены - ',
+    title: 'Прием лома черных металлов - ',
 }
 
 export default () => {
     return (
         <>
-            <h1>Цены</h1>
+            <h1>Прием лома черных металлов</h1>
         </>
     )
 }

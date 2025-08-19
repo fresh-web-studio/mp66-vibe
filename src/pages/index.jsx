@@ -1,3 +1,5 @@
+import Hero from '@/sections/Hero'
+
 export const metadata = {
   title: '',
 }
@@ -5,7 +7,7 @@ export const metadata = {
 export default () => {
   return (
     <>
-      <h1>Главная</h1>
+      <Hero />
     </>
   )
 }

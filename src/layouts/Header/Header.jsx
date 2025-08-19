@@ -66,66 +66,67 @@ const Header = (props) => {
                     <div className="hidden-tablet hidden-mobile">без выходных 9:00 - 19:00</div>
                 </div>
             </div>
-            <div className="header__inner container">
-                <Logo
-                    className="header__logo"
-                    loading="eager"
-                />
-                <dialog
-                    className="header__overlay-menu-dialog"
-                    data-js-overlay-menu-dialog=""
-                >
-                    <nav className="header__menu">
-                        <ul className="header__menu-list">
-                            {menuItems.map(({ label, href, subLink }, index) => (
-                                <li className="header__menu-item" key={index}>
-                                    {subLink && subLink.length > 0 ? (
-                                        <a
-                                            className={classNames('header__menu-link', 'is-submenu-trigger')}
-                                            onClick={handleSubmenuToggle}
-                                        >
-                                            {label}
-                                        </a>
-                                    ) : (
-                                        <a
-                                            className={classNames('header__menu-link', {
-                                                'is-active': href === url,
-                                            })}
-                                            href={`${basePath}${href}`}
-                                        >
-                                            {label}
-                                        </a>
-                                    )}
-                                    {subLink && subLink.length > 0 && (
-                                        <ul className="header__submenu">
-                                            {subLink.map(({ sublabel, href }, idx) => (
-                                                <li className="header__submenu-item" key={idx}>
-                                                    <a
-                                                        className="header__submenu-link"
-                                                        href={href}
-                                                    >
-                                                        {sublabel}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                    <div className="header__actions"></div>
-                </dialog>
+            <div className="header__inner">
+                <div className="container">
 
-                <BurgerButton
-                    className="header__burger-button visible-mobile"
-                    extraAttrs={{
-                        'data-js-overlay-menu-burger-button': '',
-                    }}
-                />
+
+                    <Logo
+                        className="header__logo"
+                        loading="eager"
+                    />
+                    <dialog
+                        className="header__overlay-menu-dialog"
+                        data-js-overlay-menu-dialog=""
+                    >
+                        <nav className="header__menu">
+                            <ul className="header__menu-list">
+                                {menuItems.map(({ label, href, subLink }, index) => (
+                                    <li className="header__menu-item" key={index}>
+                                        {subLink && subLink.length > 0 ? (
+                                            <a
+                                                className={classNames('header__menu-link', 'is-submenu-trigger')}
+                                                onClick={handleSubmenuToggle}
+                                            >
+                                                {label}
+                                            </a>
+                                        ) : (
+                                            <a
+                                                className={classNames('header__menu-link', {
+                                                    'is-active': href === url,
+                                                })}
+                                                href={`${basePath}${href}`}
+                                            >
+                                                {label}
+                                            </a>
+                                        )}
+                                        {subLink && subLink.length > 0 && (
+                                            <ul className="header__submenu">
+                                                {subLink.map(({ sublabel, href }, idx) => (
+                                                    <li className="header__submenu-item" key={idx}>
+                                                        <a
+                                                            className="header__submenu-link"
+                                                            href={href}
+                                                        >
+                                                            {sublabel}
+                                                        </a>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                        <div className="header__actions"></div>
+                    </dialog>
+                    <BurgerButton
+                        className="header__burger-button visible-mobile"
+                        extraAttrs={{
+                            'data-js-overlay-menu-burger-button': '',
+                        }}
+                    />
+                </div>
             </div>
-
-
         </header>
     )
 }

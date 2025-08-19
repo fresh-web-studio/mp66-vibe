@@ -40,11 +40,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        column-gap: 16px;
         background-color: var(--color-white);
 
-        @include mobile {
-            padding-right: 0;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 16px;
+
+            @include mobile {
+                padding-right: 0;
+            }
         }
     }
 

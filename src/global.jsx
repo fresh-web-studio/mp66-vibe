@@ -21,6 +21,7 @@ export default function (props) {
             <Head htmlAttributes={{ lang: 'ru' }}>
                 <title>{title}МеталлПром: прием металлолома, лом черных и цветных металлов в Нижнем Тагиле и Свердловской области</title>
                 <script src="/src/main.js" type='module' />
+
                 <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
                 <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
                 <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />

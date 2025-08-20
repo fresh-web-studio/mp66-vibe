@@ -17,15 +17,12 @@
         filter: brightness(115%);
     }
 
-    &__images {}
-
     &__body {
         color: var(--color-white);
         position: absolute;
         bottom: 0;
         background: rgba(31, 36, 48, .9);
         padding: fluid(48, 15);
-        //height: fluid(250, 172);
         width: 100%;
 
         @include mobile {

@@ -16,6 +16,7 @@ body {
 
 main {
     flex-grow: 1;
+    margin-bottom: 4rem;
 }
 
 h1,
@@ -85,4 +86,24 @@ a {
 
 :focus-visible {
     @include focus-visible;
+}
+
+table.table {
+    border: 2px solid;
+
+    th,
+    td {
+        padding: 8px;
+        border: 1px solid;
+        vertical-align: top;
+    }
+}
+
+.bg-none {
+    background-image: none;
+
+    .services {
+        background-image: none;
+        padding: 0;
+    }
 }

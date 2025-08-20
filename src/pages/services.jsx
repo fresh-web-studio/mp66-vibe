@@ -1,3 +1,5 @@
+import Services from '@/sections/Services'
+
 export const metadata = {
     title: 'Услуги - ',
 }
@@ -5,7 +7,10 @@ export const metadata = {
 export default () => {
     return (
         <>
-            <h1>Услуги</h1>
+            <div className="bg-none container">
+                <h1>Услуги</h1>
+                <Services />
+            </div>
         </>
     )
 }

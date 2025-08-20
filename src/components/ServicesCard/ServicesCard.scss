@@ -2,6 +2,16 @@
     display: inline-flex;
     flex-direction: column;
     position: relative;
+    width: 47%;
+
+    @include tablet {
+        justify-content: center;
+        width: 79%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 
     &:hover {
         filter: brightness(115%);
@@ -23,7 +33,7 @@
         }
 
         &-title {
-            font-size: fluid(32, 19);
+            font-size: fluid(25, 19);
             color: var(--color-white);
             margin-bottom: fluid(18, 5);
         }

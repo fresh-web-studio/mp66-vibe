@@ -13,6 +13,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: fluid(80, 30);
+
+        @include tablet {
+            justify-content: center;
+        }
     }
 
 }

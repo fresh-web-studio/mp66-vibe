@@ -107,3 +107,12 @@ table.table {
         padding: 0;
     }
 }
+
+.services-info {
+    &__image {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        max-width: 50%;
+    }
+}

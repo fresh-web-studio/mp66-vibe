@@ -10,7 +10,7 @@ export default () => {
                 <div className="services-info">
                     <img
                         className="services-info__image"
-                        src="/src/assets/images/services/lom1.jpg"
+                        src="./assets/images/services/lom1.jpg"
                         alt=""
                         width="755"
                         height="467"

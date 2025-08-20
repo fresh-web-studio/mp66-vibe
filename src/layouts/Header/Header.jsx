@@ -24,19 +24,19 @@ const Header = (props) => {
             subLink: [
                 {
                     sublabel: 'Прием лома черных металлов',
-                    href: '/services/priem-loma-chernyh-metallov',
+                    href: '/mp66-vibe/services/priem-loma-chernyh-metallov',
                 },
                 {
                     sublabel: 'Прием лома цветных металлов',
-                    href: '/services/priem-loma-cvetnyh-metallov',
+                    href: '/mp66-vibe/services/priem-loma-cvetnyh-metallov',
                 },
                 {
                     sublabel: 'Демонтаж металлолома',
-                    href: '/services/demontazh-metalloloma',
+                    href: '/mp66-vibe/services/demontazh-metalloloma',
                 },
                 {
                     sublabel: 'Погрузка и вывоз металлолома',
-                    href: '/services/pogruzka-i-vyvoz-metalloloma',
+                    href: '/mp66-vibe/services/pogruzka-i-vyvoz-metalloloma',
                 }
             ],
         },

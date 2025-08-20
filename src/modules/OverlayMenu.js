@@ -1,5 +1,3 @@
-import BurgerButton from "@/components/BurgerButton"
-
 class OverlayMenu {
     selectors = {
         root: '[data-js-overlay-menu]',

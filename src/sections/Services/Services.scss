@@ -1,0 +1,18 @@
+.services {
+    padding: fluid(90, 72) fluid(15, 15);
+    flex-grow: 1;
+    background: url('../../assets/images/services/bg-section.jpg') 50%/cover;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        padding: fluid(90, 72) 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: fluid(80, 30);
+    }
+
+}

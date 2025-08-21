@@ -3,6 +3,7 @@
     flex-grow: 1;
     background: url('../../assets/images/services/bg-section.jpg') 50%/cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     @include mobile {
         padding: fluid(90, 72) 0;

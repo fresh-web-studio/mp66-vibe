@@ -2,7 +2,7 @@ import { defineConfig } from 'minista'
 import path from 'path'
 
 export default defineConfig({
-  root: '',
+  root: '/mp66-vibe/',
   base: '/mp66-vibe/',
   public: 'public',
   out: 'dist',

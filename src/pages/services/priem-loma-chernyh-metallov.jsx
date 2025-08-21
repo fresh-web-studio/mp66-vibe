@@ -1,3 +1,5 @@
+import chernyhImgSrc from '@/assets/images/services/lom1.jpg'
+
 export const metadata = {
     title: 'Прием лома черных металлов - ',
 }
@@ -10,7 +12,7 @@ export default () => {
                 <div className="services-info">
                     <img
                         className="services-info__image"
-                        src="./assets/images/services/lom1.jpg"
+                        src={chernyhImgSrc}
                         alt=""
                         width="755"
                         height="467"

@@ -1,3 +1,5 @@
+import demontazhImgSrc from '@/assets/images/services/demont.jpg'
+
 export const metadata = {
     title: 'Демонтаж металлолома - ',
 }
@@ -10,7 +12,7 @@ export default () => {
                 <div className="services-info">
                     <img
                         className="services-info__image"
-                        src="/mp66-vibe/assets/images/services/demont.jpg"
+                        src={demontazhImgSrc}
                         alt=""
                         width="755"
                         height="467"

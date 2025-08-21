@@ -1,3 +1,5 @@
+import pogruzImgSrc from '@/assets/images/services/pogruz.jpg'
+
 export const metadata = {
     title: 'Погрузка и вывоз металлолома - ',
 }
@@ -10,7 +12,7 @@ export default () => {
                 <div className="services-info">
                     <img
                         className="services-info__image"
-                        src="@/src/assets/images/services/pogruz.jpg"
+                        src={pogruzImgSrc}
                         alt=""
                         width="755"
                         height="467"

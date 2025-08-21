@@ -1,0 +1,15 @@
+.grid {
+    --greedColumns: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--greedColumns), 1fr);
+    gap: 40px 20px;
+
+    &--2 {
+        --greedColumns: 2;
+
+        @include mobile {
+            --greedColumns: 1;
+        }
+    }
+}

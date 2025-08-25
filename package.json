@@ -3,14 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "minista",
-    "build": "minista build",
+    "start": "cross-env NODE_ENV=development minista",
+    "build": "cross-env NODE_ENV=production minista build",
     "preview": "minista preview"
   },
   "prettier": {
     "semi": false
   },
   "devDependencies": {
+    "cross-env": "^10.0.0",
     "minista": "^3.1.11",
     "postcss-preset-env": "^10.2.4",
     "postcss-pxtorem": "^6.1.0",

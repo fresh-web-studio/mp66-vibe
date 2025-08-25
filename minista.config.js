@@ -2,8 +2,8 @@ import { defineConfig } from 'minista'
 import path from 'path'
 
 export default defineConfig({
-  root: '/mp66-vibe/',
-  base: '/mp66-vibe/',
+  root: '',
+  base: process.env.NODE_ENV === 'production' ? '/mp66-vibe/' : '',
   public: 'public',
   out: 'dist',
   assets: {

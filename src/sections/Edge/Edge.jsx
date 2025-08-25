@@ -29,18 +29,6 @@ const Edge = (props) => {
                 <EdgeCard {...edgeItem} key={index} />
             ))}
         </Grid>
-        /*
-                 <section className="services">
-                    <div className="services__list container">
-                        {servicesItems.map((servicesItem, index) => (
-                            <ServicesCard
-                                {...servicesItem}
-                                key={index}
-                            />
-                        ))}
-                    </div>
-                </section>
-                */
     )
 }
 

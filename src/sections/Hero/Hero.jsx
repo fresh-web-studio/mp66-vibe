@@ -14,6 +14,7 @@ const Hero = () => {
                         <Button
                             className="hero__button"
                             label="Подробнее"
+                            href="/services"
                         />
                     </div>
                 </div>

@@ -117,3 +117,38 @@ table.table {
     }
 
 }
+
+.contacts div {
+    padding-left: 30px;
+    margin: 13px 0;
+}
+
+.contacts {
+    &__city::before {
+        position: absolute;
+        margin-left: -30px;
+        font-family: var(--font-family-icons);
+        content: "\e801";
+    }
+
+    &__mail::before {
+        position: absolute;
+        font-family: var(--font-family-icons);
+        content: "\F0E0";
+        margin-left: -30px;
+    }
+
+    &__time::before {
+        position: absolute;
+        font-family: var(--font-family-icons);
+        content: "\e802";
+        margin-left: -30px;
+    }
+
+    &__tel::before {
+        position: absolute;
+        font-family: var(--font-family-icons);
+        content: "\e800";
+        margin-left: -30px;
+    }
+}

@@ -105,7 +105,7 @@ const Header = (props) => {
                                                     <li className="header__submenu-item" key={idx}>
                                                         <a
                                                             className="header__submenu-link"
-                                                            href={href}
+                                                            href={`${basePath}${href}`}
                                                         >
                                                             {sublabel}
                                                         </a>

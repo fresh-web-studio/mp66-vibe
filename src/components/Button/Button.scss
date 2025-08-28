@@ -9,6 +9,7 @@
     user-select: none;
     cursor: pointer;
     text-transform: uppercase;
+    width: max-content;
 
     @include hover {
         color: var(--color-white);

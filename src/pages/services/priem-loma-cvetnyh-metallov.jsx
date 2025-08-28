@@ -1,3 +1,6 @@
+import Button from "@/components/Button"
+import Checkbox from "@/components/Checkbox"
+import Field from "@/components/Field"
 import cvetnyhImgSrc from '@/assets/images/services/lom2.jpg'
 
 export const metadata = {
@@ -44,7 +47,40 @@ export default () => {
                         <p>Важным принципом является чистота металла, ведь именно от нее зависит <strong>цена за металлолом</strong> в Нижнем Тагиле. Самыми дорогими считаются предметы из сплава меди и латуни, чуть меньшую прибыль можно получить от продажи алюминия.</p>
                         <p>Самым дешевым считается никель, однако если в недорогом металле не будет примесей и загрязнений, он может быть оценен не хуже дорогостоящих сплавов. А металлы с большим количеством примесей будут стоить гораздо дешевле чистого сырья.</p>
                     </div>
-                    <div className="services-info__message-form"></div>
+                    <div className="fit-back">
+                        <h2 className="fit-back__title">Обратная связь</h2>
+                        <div className="map"></div>
+                        <form className="fit-back__form" action="">
+                            <Field
+                                className="fit-back__form-cell"
+                                label="Name"
+                                placeholder="Имя*"
+                                isRequired
+                            />
+                            <Field
+                                className="fit-back__form-cell"
+                                label="Phone"
+                                placeholder="+7 (999) 999-99-99*"
+                                type="tel"
+                                inputMode="tel"
+                                mask="+7 (000) 000-00-00"
+                                isRequired
+                            />
+
+                            <div className="fit-back__form-cell fit-back__form-cell--wide fit-back__form-cell--actions">
+                                <Checkbox
+                                    className="fit-back__form-agreement"
+                                    label="Принимаю условия политики информационной безопасности"
+                                    isRequired
+                                />
+                            </div>
+                            <Button
+                                className="fit-back__form-submit-button"
+                                label="Отправить"
+                                type="submit"
+                            />
+                        </form>
+                    </div>
                 </div>
             </div>
         </>

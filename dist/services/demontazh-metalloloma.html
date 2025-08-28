@@ -87,7 +87,30 @@
             </ul>
             <p>Все работы по разборке, погрузке и вывозу лома компания берет на себя. Клиенту остается только убедиться в качестве и удобной организации предлагаемых услуг, <strong>сдать металлолом</strong>, а после забрать деньги. Чтобы воспользоваться услугами компании, нужно оставить заявку, после чего специалист свяжется с клиентом и обговорит все детали предстоящих работ.</p>
           </div>
-          <div class="services-info__message-form"></div>
+          <div class="fit-back">
+            <h2 class="fit-back__title">Обратная связь</h2>
+            <div class="map"></div>
+            <form class="fit-back__form" action="">
+              <div class="fit-back__form-cell field">
+                <label class="field__label visually-hidden" for="name">Name<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <input class="field__control" id="name" placeholder="Имя*" required="">
+                </div>
+              </div>
+              <div class="fit-back__form-cell field">
+                <label class="field__label visually-hidden" for="phone">Phone<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <input class="field__control" id="phone" placeholder="+7 (999) 999-99-99*" type="tel" required="" inputMode="tel" data-js-input-mask="+7 (000) 000-00-00">
+                </div>
+              </div>
+              <div class="fit-back__form-cell fit-back__form-cell--wide fit-back__form-cell--actions">
+                <label class="fit-back__form-agreement checkbox" for="id">
+                  <input class="checkbox__input" id="принимаю-условия-политики-информационной-безопасности" type="checkbox" required=""><span class="checkbox__label">Принимаю условия политики информационной безопасности</span>
+                </label>
+              </div>
+              <button class="fit-back__form-submit-button button" type="submit"><span class="button__label">Отправить</span></button>
+            </form>
+          </div>
         </div>
       </div>
     </main>

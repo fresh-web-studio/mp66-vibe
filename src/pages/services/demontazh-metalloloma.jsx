@@ -1,3 +1,6 @@
+import Button from "@/components/Button"
+import Checkbox from "@/components/Checkbox"
+import Field from "@/components/Field"
 import demontazhImgSrc from '@/assets/images/services/demont.jpg'
 
 export const metadata = {
@@ -31,7 +34,40 @@ export default () => {
                         </ul>
                         <p>Все работы по разборке, погрузке и вывозу лома компания берет на себя. Клиенту остается только убедиться в качестве и удобной организации предлагаемых услуг, <strong>сдать металлолом</strong>, а после забрать деньги. Чтобы воспользоваться услугами компании, нужно оставить заявку, после чего специалист свяжется с клиентом и обговорит все детали предстоящих работ.</p>
                     </div>
-                    <div className="services-info__message-form"></div>
+                    <div className="fit-back">
+                        <h2 className="fit-back__title">Обратная связь</h2>
+                        <div className="map"></div>
+                        <form className="fit-back__form" action="">
+                            <Field
+                                className="fit-back__form-cell"
+                                label="Name"
+                                placeholder="Имя*"
+                                isRequired
+                            />
+                            <Field
+                                className="fit-back__form-cell"
+                                label="Phone"
+                                placeholder="+7 (999) 999-99-99*"
+                                type="tel"
+                                inputMode="tel"
+                                mask="+7 (000) 000-00-00"
+                                isRequired
+                            />
+
+                            <div className="fit-back__form-cell fit-back__form-cell--wide fit-back__form-cell--actions">
+                                <Checkbox
+                                    className="fit-back__form-agreement"
+                                    label="Принимаю условия политики информационной безопасности"
+                                    isRequired
+                                />
+                            </div>
+                            <Button
+                                className="fit-back__form-submit-button"
+                                label="Отправить"
+                                type="submit"
+                            />
+                        </form>
+                    </div>
                 </div>
             </div>
         </>

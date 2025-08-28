@@ -1,3 +1,6 @@
+import Button from "@/components/Button"
+import Checkbox from "@/components/Checkbox"
+import Field from "@/components/Field"
 import chernyhImgSrc from '@/assets/images/services/lom1.jpg'
 
 export const metadata = {
@@ -37,7 +40,40 @@ export default () => {
                         <p>Цена зависит и от объемов принимаемого металлолома – сдавать крупные партии гораздо выгоднее, чем несколько кг чермета. Кроме того, «бонус» получают и постоянные клиенты: для тех, кто регулярно сдает металлолом, условия сотрудничества обговариваются отдельно.</p>
                         <p>&nbsp;</p>
                     </div>
-                    <div className="services-info__message-form"></div>
+                    <div className="fit-back">
+                        <h2 className="fit-back__title">Обратная связь</h2>
+                        <div className="map"></div>
+                        <form className="fit-back__form" action="">
+                            <Field
+                                className="fit-back__form-cell"
+                                label="Name"
+                                placeholder="Имя*"
+                                isRequired
+                            />
+                            <Field
+                                className="fit-back__form-cell"
+                                label="Phone"
+                                placeholder="+7 (999) 999-99-99*"
+                                type="tel"
+                                inputMode="tel"
+                                mask="+7 (000) 000-00-00"
+                                isRequired
+                            />
+
+                            <div className="fit-back__form-cell fit-back__form-cell--wide fit-back__form-cell--actions">
+                                <Checkbox
+                                    className="fit-back__form-agreement"
+                                    label="Принимаю условия политики информационной безопасности"
+                                    isRequired
+                                />
+                            </div>
+                            <Button
+                                className="fit-back__form-submit-button"
+                                label="Отправить"
+                                type="submit"
+                            />
+                        </form>
+                    </div>
                 </div>
             </div>
         </>

@@ -26,8 +26,13 @@
         }
 
         &-title {
+            display: flex;
             color: var(--color-white);
             text-transform: uppercase;
+
+            img {
+                padding-right: 13px;
+            }
         }
 
         &-list {

@@ -3,3 +3,13 @@ import InputMaskCollection from '@/modules/inputMaskCollection';
 
 new OverlayMenu()
 new InputMaskCollection()
+
+if (typeof document !== 'undefined') {
+    // Сразу после загрузки страницы проверяем путь и показываем карту
+    document.addEventListener('DOMContentLoaded', () => {
+        const mapContainer = document.querySelector('.map');
+        if (window.location.pathname === '/mp66-vibe/') {
+            mapContainer.style.display = 'block';
+        }
+    })
+}

@@ -29,6 +29,7 @@ const Footer = () => {
             href: ['mailto:mail@mp66.ru'],
         },
     ]
+
     return (
         <footer className='footer'>
             <div className="footer__inner container">
@@ -56,6 +57,13 @@ const Footer = () => {
                         </div>
                     ))}
                 </nav>
+            </div>
+
+            <div className="map" style={{ display: 'none' }}>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab28648cd7fde7627c53afec8d1d2ba035bf186325485620926a30e419cbc382f&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
+            </div>
+
+            <div className="footer__inner container">
                 <div className="footer__extra">
                     <p className="footer__copyright">
                         © OOO «Компания Металлпром», <time datatime="2017-2025">2017-2025</time>. <a className="footer__extra-links" href="/security">Политика информационной безопасности</a>
@@ -65,5 +73,6 @@ const Footer = () => {
         </footer>
     )
 }
+
 
 export default Footer

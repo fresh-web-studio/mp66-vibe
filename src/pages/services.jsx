@@ -7,7 +7,7 @@ export const metadata = {
 export default () => {
     return (
         <>
-            <div className="bg-none container">
+            <div className="bg-none container non-home-page">
                 <h1>Услуги</h1>
                 <Services />
             </div>

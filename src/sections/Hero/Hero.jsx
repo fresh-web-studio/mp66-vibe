@@ -14,7 +14,7 @@ const Hero = () => {
                         <Button
                             className="hero__button"
                             label="Подробнее"
-                            href="/services"
+                            href="/mp66-vibe/services"
                         />
                     </div>
                 </div>

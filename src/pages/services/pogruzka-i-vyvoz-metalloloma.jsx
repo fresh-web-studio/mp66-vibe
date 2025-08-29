@@ -10,7 +10,7 @@ export const metadata = {
 export default () => {
     return (
         <>
-            <div className="container">
+            <div className="container non-home-page">
                 <h1>Погрузка и вывоз металлолома</h1>
                 <div className="services-info">
                     <img

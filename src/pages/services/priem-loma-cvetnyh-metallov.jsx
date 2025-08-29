@@ -11,7 +11,7 @@ export default () => {
     return (
         <>
 
-            <div className="container">
+            <div className="container non-home-page">
                 <h1>Прием лома цветных металлов</h1>
                 <div className="services-info">
                     <img

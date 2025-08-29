@@ -5,6 +5,7 @@ import Edge from '@/sections/Edge'
 import Order from '@/sections/Order'
 import Request from '@/sections/Request'
 import About from '@/sections/About'
+import Seo from '@/sections/Seo'
 
 export const metadata = {
   title: '',
@@ -19,6 +20,7 @@ export default () => {
       <Request />
       <Edge />
       <About />
+      <Seo />
     </>
   )
 }

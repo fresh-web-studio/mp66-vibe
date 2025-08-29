@@ -7,7 +7,7 @@ export const metadata = {
 export default () => {
     return (
         <>
-            <div className="container">
+            <div className="container non-home-page">
                 <h1>Цены</h1>
                 <div>
                     <table className="table">

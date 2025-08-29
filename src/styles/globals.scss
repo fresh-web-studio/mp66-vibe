@@ -16,7 +16,6 @@ body {
 
 main {
     flex-grow: 1;
-    margin-bottom: 4rem;
 }
 
 h1,
@@ -171,4 +170,8 @@ table.table {
     border: 1px solid;
     overflow: hidden;
     margin-bottom: 50px;
+}
+
+.non-home-page {
+    margin-bottom: 40px;
 }

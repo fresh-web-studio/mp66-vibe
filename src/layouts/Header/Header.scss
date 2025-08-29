@@ -37,6 +37,38 @@
         }
     }
 
+    &__city {
+        padding-left: 30px;
+
+        &::before {
+            position: absolute;
+            margin-left: -30px;
+            font-family: var(--font-family-icons);
+            color: var(--color-blue);
+            content: "\e801";
+        }
+    }
+
+    &__time::before {
+        position: absolute;
+        font-family: var(--font-family-icons);
+        content: "\e802";
+        color: var(--color-blue);
+        margin-left: -30px;
+    }
+
+    &__tel {
+        padding-left: 30px;
+    }
+
+    &__tel::before {
+        position: absolute;
+        font-family: var(--font-family-icons);
+        content: "\e800";
+        color: var(--color-blue);
+        margin-left: -30px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;

@@ -6,11 +6,7 @@
 
     @include tablet {
         justify-content: center;
-        width: 79%;
-    }
-
-    @include mobile {
-        width: 100%;
+        width: 80%;
     }
 
     &:hover {

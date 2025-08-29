@@ -1,4 +1,5 @@
 .edge-card {
+    width: 100%;
     gap: 30px;
     padding: 0 15px;
     align-items: center;
@@ -13,6 +14,7 @@
         border-radius: 50%;
         background-color: var(--color-blue);
         color: var(--color-white);
+        aspect-ratio: 1;
     }
 
     &__title {

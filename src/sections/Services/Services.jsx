@@ -33,7 +33,7 @@ const Services = () => {
             images: [
                 '/src/assets/images/services/pogruz.jpg',
             ],
-            url: '/services/pogruzka-i-vyvoz-metalloloma',
+            url: '/mp66-vibe/services/pogruzka-i-vyvoz-metalloloma',
             description: 'Наше предприятие располагает собственным обширным автопарком современной специализированной техники высокого качества.'
         },
     ]

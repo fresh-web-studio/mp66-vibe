@@ -4,7 +4,7 @@ import InputMaskCollection from '@/modules/inputMaskCollection';
 new OverlayMenu()
 new InputMaskCollection()
 
-if (typeof document !== 'undefined') {
+if (typeof document !== 'undefined') { //Перед обращением к document, убедиться, что объект доступен
     // Сразу после загрузки страницы проверяем путь и показываем карту
     document.addEventListener('DOMContentLoaded', () => {
         const mapContainer = document.querySelector('.map');

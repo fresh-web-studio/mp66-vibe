@@ -1,7 +1,9 @@
 import OverlayMenu from "@/modules/OverlayMenu";
+import ModalMore from "@/modules/ModalMore";
 import InputMaskCollection from '@/modules/inputMaskCollection';
 
 new OverlayMenu()
+new ModalMore()
 new InputMaskCollection()
 
 if (typeof document !== 'undefined') { //Перед обращением к document, убедиться, что объект доступен

@@ -17,7 +17,7 @@ export default function (props) {
 
 
     return (
-        <>
+        <body data-js-modal-more="">
             <Head htmlAttributes={{ lang: 'ru' }}>
                 <title>{title}МеталлПром: прием металлолома, лом черных и цветных металлов в Нижнем Тагиле и Свердловской области</title>
                 <script src="/src/main.js" type='module' />
@@ -32,6 +32,6 @@ export default function (props) {
                 {children}
             </Content>
             <Footer />
-        </>
+        </body>
     )
 }

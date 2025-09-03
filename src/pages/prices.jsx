@@ -1,4 +1,5 @@
 import Button from '@/components/Button'
+import Modal from '@/components/Modal'
 
 export const metadata = {
     title: 'Цены - ',
@@ -76,11 +77,17 @@ export default () => {
                     <p><strong><span>При объеме&nbsp;свыше&nbsp;1&nbsp;тонны&nbsp;действует спеццена.</span></strong></p>
                     <p>&nbsp;</p>
                 </div>
+
                 <Button
                     className="mail__button"
+                    id="show-dialog-btn"
+                    type="button"
+                    onClick="modalMore.showModal"
                     label="Узнать больше"
+                    extraAttrs={{
+                        'data-js-modal-more-button': '',
+                    }}
                 />
-
             </div>
 
         </>

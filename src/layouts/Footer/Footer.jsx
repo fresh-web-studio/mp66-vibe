@@ -3,6 +3,7 @@ import iconLocation from '@/assets/icons/location.svg'
 import iconTime from '@/assets/icons/clock.svg'
 import iconPhone from '@/assets/icons/phone.svg'
 import iconMail from '@/assets/icons/mail.svg'
+import Modal from '@/components/Modal'
 
 const Footer = () => {
     const menuItems = [
@@ -70,7 +71,9 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
+            <Modal />
         </footer>
+
     )
 }
 

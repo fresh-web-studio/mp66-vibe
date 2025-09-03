@@ -5,6 +5,7 @@ import Icon from '@/components/Icon'
 const Button = (props) => {
     const {
         className,
+        extraAttrs,
         type = 'button',
         href,
         target,
@@ -44,6 +45,7 @@ const Button = (props) => {
             title={title}
             aria-label={title}
             {...specificProps}
+            {...extraAttrs}
         >
             {iconPosition === 'before' && iconComponent}
             {!isLabelHidden && (

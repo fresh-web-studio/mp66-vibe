@@ -12,169 +12,207 @@
     <link rel="stylesheet" href="/mp66-vibe/assets/bundle.css">
   </head>
   <body>
-    <header class="header" data-js-overlay-menu="">
-      <div class="header__contacts">
-        <div class="container">
-          <div class="hidden-mobile header__city">Нижний Тагил, ул.Краснознаменная, 55</div>
-          <div class="header__tel">
-            <a href="tel:%2B7%28912%29229-09-85">+7 (912) 229-09-85</a>, <a href="tel:%2B7%28912%29030-85-08">+7 (912) 030-85-08</a>
+    <body data-js-modal-more="">
+      <header class="header" data-js-overlay-menu="">
+        <div class="header__contacts">
+          <div class="container">
+            <div class="hidden-mobile header__city">Нижний Тагил, ул.Краснознаменная, 55</div>
+            <div class="header__tel">
+              <a href="tel:%2B7%28912%29229-09-85">+7 (912) 229-09-85</a>, <a href="tel:%2B7%28912%29030-85-08">+7 (912) 030-85-08</a>
+            </div>
+            <div class="hidden-tablet hidden-mobile header__time">без выходных 9:00 - 19:00</div>
           </div>
-          <div class="hidden-tablet hidden-mobile header__time">без выходных 9:00 - 19:00</div>
         </div>
-      </div>
-      <div class="header__inner">
-        <div class="container">
-          <a class="header__logo logo" href="/mp66-vibe/" title="Home" aria-label="Home">
-            <img class="logo__image" src="/mp66-vibe/assets/images/logo.svg" alt="" width="400" height="100" loading="eager">
-          </a>
-          <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
-            <nav class="header__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="/mp66-vibe/o-kompanii">О компании</a>
+        <div class="header__inner">
+          <div class="container">
+            <a class="header__logo logo" href="/mp66-vibe/" title="Home" aria-label="Home">
+              <img class="logo__image" src="/mp66-vibe/assets/images/logo.svg" alt="" width="400" height="100" loading="eager">
+            </a>
+            <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
+              <nav class="header__menu">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="/mp66-vibe/o-kompanii">О компании</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link is-submenu-trigger">Услуги</a>
+                    <ul class="header__submenu">
+                      <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="/mp66-vibe/services/priem-loma-chernyh-metallov">Прием лома черных металлов</a>
+                      </li>
+                      <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="/mp66-vibe/services/priem-loma-cvetnyh-metallov">Прием лома цветных металлов</a>
+                      </li>
+                      <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="/mp66-vibe/services/demontazh-metalloloma">Демонтаж металлолома</a>
+                      </li>
+                      <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="/mp66-vibe/services/pogruzka-i-vyvoz-metalloloma">Погрузка и вывоз металлолома</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="/mp66-vibe/prices">Цены</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link is-active" href="/mp66-vibe/contacts">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__actions"></div>
+            </dialog>
+            <button class="header__burger-button visible-mobile burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
+              <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+                <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+                <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+                <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <div class="container non-home-page">
+          <h1>Контакты</h1>
+          <div class="contacts">
+            <div class="contacts__city">Нижний Тагил</div>
+            <div>ул.Краснознаменная, 55</div>
+            <div class="contacts__time">без выходных 9:00 - 19:00</div>
+            <div class="contacts__tel">+7 (912) 229-09-85, +7 (912) 030-85-08</div>
+            <div class="contacts__mail">mail@mp66.ru</div>
+          </div>
+          <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab28648cd7fde7627c53afec8d1d2ba035bf186325485620926a30e419cbc382f&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
+          </div>
+          <div class="fit-back">
+            <h2 class="fit-back__title">Обратная связь</h2>
+            <div class="map"></div>
+            <form class="fit-back__form" action="">
+              <div class="fit-back__form-cell field">
+                <label class="field__label visually-hidden" for="name">Name<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <input class="field__control" id="name" placeholder="Имя*" required="">
+                </div>
+              </div>
+              <div class="fit-back__form-cell field">
+                <label class="field__label visually-hidden" for="phone">Phone<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <input class="field__control" id="phone" placeholder="+7 (999) 999-99-99*" type="tel" required="" inputMode="tel" data-js-input-mask="+7 (000) 000-00-00">
+                </div>
+              </div>
+              <div class="fit-back__form-cell field">
+                <label class="field__label visually-hidden" for="e-mail">E-mail<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <input class="field__control" id="e-mail" placeholder="E-mail*" type="email" required="">
+                </div>
+              </div>
+              <div class="fit-back__form-cell fit-back__form-cell--wide field">
+                <label class="field__label visually-hidden" for="text">Text<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <textarea class="field__control" id="text" placeholder="Текст*" type="textarea" required=""></textarea>
+                </div>
+              </div>
+              <div class="fit-back__form-cell fit-back__form-cell--wide fit-back__form-cell--actions">
+                <label class="fit-back__form-agreement checkbox" for="id">
+                  <input class="checkbox__input" id="принимаю-условия-политики-информационной-безопасности" type="checkbox" required=""><span class="checkbox__label">Принимаю условия политики информационной безопасности</span>
+                </label>
+              </div>
+              <button class="fit-back__form-submit-button button" type="submit"><span class="button__label">Отправить</span></button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner container">
+          <nav class="footer__menu">
+            <div class="footer__menu-column">
+              <p class="footer__menu-title h3">
+                <img src="/mp66-vibe/assets/images/location.svg" alt="" width="42" height="42"> <!-- -->Адреса
+              </p>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><span class="footer__menu-text">Нижний Тагил</span></li>
+                <li class="footer__menu-item"><span class="footer__menu-text">ул.Краснознаменная, 55</span></li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <p class="footer__menu-title h3">
+                <img src="/mp66-vibe/assets/images/phone.svg" alt="" width="42" height="42"> <!-- -->Телефоны
+              </p>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="tel:%2B7%28912%29229-09-85">+7 (912) 229-09-85</a>
                 </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link is-submenu-trigger">Услуги</a>
-                  <ul class="header__submenu">
-                    <li class="header__submenu-item">
-                      <a class="header__submenu-link" href="/mp66-vibe/services/priem-loma-chernyh-metallov">Прием лома черных металлов</a>
-                    </li>
-                    <li class="header__submenu-item">
-                      <a class="header__submenu-link" href="/mp66-vibe/services/priem-loma-cvetnyh-metallov">Прием лома цветных металлов</a>
-                    </li>
-                    <li class="header__submenu-item">
-                      <a class="header__submenu-link" href="/mp66-vibe/services/demontazh-metalloloma">Демонтаж металлолома</a>
-                    </li>
-                    <li class="header__submenu-item">
-                      <a class="header__submenu-link" href="/mp66-vibe/services/pogruzka-i-vyvoz-metalloloma">Погрузка и вывоз металлолома</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link" href="/mp66-vibe/prices">Цены</a>
-                </li>
-                <li class="header__menu-item">
-                  <a class="header__menu-link is-active" href="/mp66-vibe/contacts">Контакты</a>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="tel:%2B7%28912%29030-85-08">+7 (912) 030-85-08</a>
                 </li>
               </ul>
-            </nav>
-            <div class="header__actions"></div>
-          </dialog>
-          <button class="header__burger-button visible-mobile burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
-            <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
-              <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
-              <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
-              <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
-            </svg>
-          </button>
+            </div>
+            <div class="footer__menu-column">
+              <p class="footer__menu-title h3">
+                <img src="/mp66-vibe/assets/images/clock.svg" alt="" width="42" height="42"> <!-- -->Работаем
+              </p>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><span class="footer__menu-text">Без выходных 9:00 - 19:00</span></li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <p class="footer__menu-title h3">
+                <img src="/mp66-vibe/assets/images/mail.svg" alt="" width="42" height="42"> <!-- -->E-mail
+              </p>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="mailto:mail@mp66.ru">mail@mp66.ru</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="container non-home-page">
-        <h1>Контакты</h1>
-        <div class="contacts">
-          <div class="contacts__city">Нижний Тагил</div>
-          <div>ул.Краснознаменная, 55</div>
-          <div class="contacts__time">без выходных 9:00 - 19:00</div>
-          <div class="contacts__tel">+7 (912) 229-09-85, +7 (912) 030-85-08</div>
-          <div class="contacts__mail">mail@mp66.ru</div>
-        </div>
-        <div class="map">
+        <div class="map" style="display:none">
           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab28648cd7fde7627c53afec8d1d2ba035bf186325485620926a30e419cbc382f&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
         </div>
-        <div class="fit-back">
-          <h2 class="fit-back__title">Обратная связь</h2>
-          <div class="map"></div>
-          <form class="fit-back__form" action="">
-            <div class="fit-back__form-cell field">
-              <label class="field__label visually-hidden" for="name">Name<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
-              <div class="field__label">
-                <input class="field__control" id="name" placeholder="Имя*" required="">
-              </div>
-            </div>
-            <div class="fit-back__form-cell field">
-              <label class="field__label visually-hidden" for="phone">Phone<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
-              <div class="field__label">
-                <input class="field__control" id="phone" placeholder="+7 (999) 999-99-99*" type="tel" required="" inputMode="tel" data-js-input-mask="+7 (000) 000-00-00">
-              </div>
-            </div>
-            <div class="fit-back__form-cell field">
-              <label class="field__label visually-hidden" for="e-mail">E-mail<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
-              <div class="field__label">
-                <input class="field__control" id="e-mail" placeholder="E-mail*" type="email" required="">
-              </div>
-            </div>
-            <div class="fit-back__form-cell fit-back__form-cell--wide field">
-              <label class="field__label visually-hidden" for="text">Text<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
-              <div class="field__label">
-                <textarea class="field__control" id="text" placeholder="Текст*" type="textarea" required=""></textarea>
-              </div>
-            </div>
-            <div class="fit-back__form-cell fit-back__form-cell--wide fit-back__form-cell--actions">
-              <label class="fit-back__form-agreement checkbox" for="id">
-                <input class="checkbox__input" id="принимаю-условия-политики-информационной-безопасности" type="checkbox" required=""><span class="checkbox__label">Принимаю условия политики информационной безопасности</span>
-              </label>
-            </div>
-            <button class="fit-back__form-submit-button button" type="submit"><span class="button__label">Отправить</span></button>
-          </form>
+        <div class="footer__inner container">
+          <div class="footer__extra">
+            <p class="footer__copyright">© OOO «Компания Металлпром», <time datatime="2017-2025">2017-2025</time>. <a class="footer__extra-links" href="/mp66-vibe/security">Политика информационной безопасности</a>
+            </p>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__inner container">
-        <nav class="footer__menu">
-          <div class="footer__menu-column">
-            <p class="footer__menu-title h3">
-              <img src="/mp66-vibe/assets/images/location.svg" alt="" width="42" height="42"> <!-- -->Адреса
-            </p>
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item"><span class="footer__menu-text">Нижний Тагил</span></li>
-              <li class="footer__menu-item"><span class="footer__menu-text">ул.Краснознаменная, 55</span></li>
-            </ul>
+        <dialog class="fit-back__dialog" id="modalMore" data-js-modal-more-dialog="">
+          <div class="fit-back">
+            <div class="fit-back__header">
+              <h2 class="fit-back__title">Узнать цену лома</h2>
+              <div class="fit-back__close">
+                <img src="data:image/svg+xml,%3csvg%20width=&#x27;26&#x27;%20height=&#x27;26&#x27;%20viewBox=&#x27;0%200%2026%2026&#x27;%20fill=&#x27;none&#x27;%20xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%3e%3cpath%20d=&#x27;M16.0035%2013L25.3506%203.65245C25.6077%203.39513%2025.7496%203.05184%2025.75%202.68578C25.75%202.31952%2025.6081%201.97582%2025.3506%201.71891L24.5315%200.900011C24.274%200.642084%2023.9307%200.500824%2023.5642%200.500824C23.1984%200.500824%2022.8551%200.642084%2022.5976%200.900011L13.2504%2010.247L3.90285%200.900011C3.64573%200.642084%203.30224%200.500824%202.93598%200.500824C2.57012%200.500824%202.22663%200.642084%201.96951%200.900011L1.15%201.71891C0.616667%202.25225%200.616667%203.11973%201.15%203.65245L10.4974%2013L1.15%2022.3472C0.892683%2022.6049%200.751016%2022.9482%200.751016%2023.3142C0.751016%2023.6803%200.892683%2024.0236%201.15%2024.2811L1.96931%2025.1C2.22642%2025.3577%202.57012%2025.4992%202.93577%2025.4992C3.30203%2025.4992%203.64553%2025.3577%203.90264%2025.1L13.2502%2015.7529L22.5974%2025.1C22.8549%2025.3577%2023.1982%2025.4992%2023.564%2025.4992H23.5644C23.9305%2025.4992%2024.2738%2025.3577%2024.5313%2025.1L25.3504%2024.2811C25.6075%2024.0238%2025.7494%2023.6803%2025.7494%2023.3142C25.7494%2022.9482%2025.6075%2022.6049%2025.3504%2022.3474L16.0035%2013Z&#x27;%20fill=&#x27;black&#x27;/%3e%3c/svg%3e" alt="close" data-js-modal-more-button-close="true">
+              </div>
+            </div>
+            <form class="fit-back__form" action="" method="dialog">
+              <div class="fit-back__form-cell field">
+                <label class="field__label visually-hidden" for="name">Name<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <input class="field__control" id="name" placeholder="Имя*" required="">
+                </div>
+              </div>
+              <div class="fit-back__form-cell field">
+                <label class="field__label visually-hidden" for="e-mail">E-mail<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <input class="field__control" id="e-mail" placeholder="E-mail*" type="email" required="">
+                </div>
+              </div>
+              <div class="fit-back__form-cell fit-back__form-cell--wide field">
+                <label class="field__label visually-hidden" for="text">Text<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                <div class="field__label">
+                  <textarea class="field__control" id="text" placeholder="Текст*" type="textarea" required=""></textarea>
+                </div>
+              </div>
+              <div class="fit-back__form-cell fit-back__form-cell--wide fit-back__form-cell--actions">
+                <label class="fit-back__form-agreement checkbox" for="id">
+                  <input class="checkbox__input" id="принимаю-условия-политики-информационной-безопасности" type="checkbox" required=""><span class="checkbox__label">Принимаю условия политики информационной безопасности</span>
+                </label>
+              </div>
+              <button class="fit-back__form-submit-button button" type="submit"><span class="button__label">Отправить</span></button>
+            </form>
           </div>
-          <div class="footer__menu-column">
-            <p class="footer__menu-title h3">
-              <img src="/mp66-vibe/assets/images/phone.svg" alt="" width="42" height="42"> <!-- -->Телефоны
-            </p>
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="tel:%2B7%28912%29229-09-85">+7 (912) 229-09-85</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="tel:%2B7%28912%29030-85-08">+7 (912) 030-85-08</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__menu-column">
-            <p class="footer__menu-title h3">
-              <img src="/mp66-vibe/assets/images/clock.svg" alt="" width="42" height="42"> <!-- -->Работаем
-            </p>
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item"><span class="footer__menu-text">Без выходных 9:00 - 19:00</span></li>
-            </ul>
-          </div>
-          <div class="footer__menu-column">
-            <p class="footer__menu-title h3">
-              <img src="/mp66-vibe/assets/images/mail.svg" alt="" width="42" height="42"> <!-- -->E-mail
-            </p>
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="mailto:mail@mp66.ru">mail@mp66.ru</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="map" style="display:none">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab28648cd7fde7627c53afec8d1d2ba035bf186325485620926a30e419cbc382f&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
-      </div>
-      <div class="footer__inner container">
-        <div class="footer__extra">
-          <p class="footer__copyright">© OOO «Компания Металлпром», <time datatime="2017-2025">2017-2025</time>. <a class="footer__extra-links" href="/mp66-vibe/security">Политика информационной безопасности</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+        </dialog>
+      </footer>
+    </body>
   </body>
 </html>

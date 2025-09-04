@@ -37,20 +37,19 @@ const Field = (props) => {
                         aria-hidden="true"
                     >*</span>
                 )}
-                <div className="field__label">
-                    <Component
-                        className='field__control'
-                        id={id}
-                        placeholder={placeholder}
-                        type={type}
-                        name={name}
-                        required={isRequired}
-                        inputMode={inputMode}
-                        {...extraAttrs}
-                    />
-                </div>
-
             </label>
+            <div className="field__label">
+                <Component
+                    className='field__control'
+                    id={id}
+                    placeholder={placeholder}
+                    type={type}
+                    name={name}
+                    required={isRequired}
+                    inputMode={inputMode}
+                    {...extraAttrs}
+                />
+            </div>
 
         </div>
     )

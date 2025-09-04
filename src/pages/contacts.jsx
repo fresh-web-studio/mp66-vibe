@@ -28,7 +28,7 @@ export default () => {
                         className="fit-back__form"
                         name="page-contacts"
                         data-netlify="true"
-                        method="POST"
+                        method="post"
                     >
                         <Field
                             className="fit-back__form-cell"

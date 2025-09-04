@@ -9,7 +9,7 @@ const Services = () => {
             images: [
                 '/src/assets/images/services/lom1.jpg',
             ],
-            url: '/mp66-vibe/services/priem-loma-chernyh-metallov',
+            url: '/services/priem-loma-chernyh-metallov',
             description: 'Вы можете нам сдать: габаритный и негабаритный чугун, а также бытовой с содержанием фосфора; сталь: жесть, стружку, в том числе автомобили.'
         },
         {
@@ -17,7 +17,7 @@ const Services = () => {
             images: [
                 '/src/assets/images/services/lom2.jpg',
             ],
-            url: '/mp66-vibe/services/priem-loma-cvetnyh-metallov',
+            url: '/services/priem-loma-cvetnyh-metallov',
             description: 'Наши собственные пункты приёма, лаборатория экспресс-анализа и техника оперативно осуществляют закупку металла любого объёма.'
         },
         {
@@ -25,7 +25,7 @@ const Services = () => {
             images: [
                 '/src/assets/images/services/demont.jpg',
             ],
-            url: '/mp66-vibe/services/demontazh-metalloloma',
+            url: '/services/demontazh-metalloloma',
             description: 'Профессионально выполняем оперативный и качественный демонтаж любых видов металлоконструкций, соблюдая технологию и сроки.'
         },
         {
@@ -33,7 +33,7 @@ const Services = () => {
             images: [
                 '/src/assets/images/services/pogruz.jpg',
             ],
-            url: '/mp66-vibe/services/pogruzka-i-vyvoz-metalloloma',
+            url: '/services/pogruzka-i-vyvoz-metalloloma',
             description: 'Наше предприятие располагает собственным обширным автопарком современной специализированной техники высокого качества.'
         },
     ]

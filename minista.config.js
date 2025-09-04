@@ -3,7 +3,7 @@ import path from 'path'
 
 export default defineConfig({
   root: '',
-  base: process.env.NODE_ENV === 'production' ? '/mp66-vibe/' : '',
+  base: '',
   public: 'public',
   out: 'dist',
   assets: {

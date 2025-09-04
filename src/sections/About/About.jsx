@@ -26,7 +26,7 @@ const About = () => {
                 <Button
                     className="about__button"
                     label="Подробнее"
-                    href="/mp66-vibe/o-kompanii"
+                    href="/o-kompanii"
                 />
             </div>
 

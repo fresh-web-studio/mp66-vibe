@@ -3,7 +3,6 @@ import ModalMore from "@/modules/ModalMore";
 import InputMaskCollection from '@/modules/InputMaskCollection';
 
 new OverlayMenu()
-new ModalMore()
 new InputMaskCollection()
 
 if (typeof document !== 'undefined') { //Перед обращением к document, убедиться, что объект доступен
@@ -15,3 +14,5 @@ if (typeof document !== 'undefined') { //Перед обращением к docu
         }
     })
 }
+
+new ModalMore()

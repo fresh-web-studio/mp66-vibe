@@ -24,7 +24,7 @@ export default () => {
                 <div className="fit-back">
                     <h2 className="fit-back__title">Обратная связь</h2>
                     <div className="map"></div>
-                    <form className="fit-back__form" name="page-contacts">
+                    <form className="fit-back__form" name="page-contacts" netlife>
                         <Field
                             className="fit-back__form-cell"
                             label="Name"

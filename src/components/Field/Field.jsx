@@ -7,6 +7,7 @@ const Field = (props) => {
         className,
         id = getIdFromTitle(props.label),
         label,
+        name,
         type,
         placeholder,
         isRequired,
@@ -42,6 +43,7 @@ const Field = (props) => {
                         id={id}
                         placeholder={placeholder}
                         type={type}
+                        name={name}
                         required={isRequired}
                         inputMode={inputMode}
                         {...extraAttrs}

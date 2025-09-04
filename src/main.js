@@ -1,6 +1,6 @@
 import OverlayMenu from "@/modules/OverlayMenu";
 import ModalMore from "@/modules/ModalMore";
-import InputMaskCollection from '@/modules/inputMaskCollection';
+import InputMaskCollection from '@/modules/InputMaskCollection';
 
 new OverlayMenu()
 new ModalMore()

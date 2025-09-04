@@ -94,7 +94,7 @@ const Header = (props) => {
                                                 className={classNames('header__menu-link', {
                                                     'is-active': href === url,
                                                 })}
-                                                href={`${basePath}${href}`}
+                                                href={`${href}`}
                                             >
                                                 {label}
                                             </a>
@@ -105,7 +105,7 @@ const Header = (props) => {
                                                     <li className="header__submenu-item" key={idx}>
                                                         <a
                                                             className="header__submenu-link"
-                                                            href={`${basePath}${href}`}
+                                                            href={`${href}`}
                                                         >
                                                             {sublabel}
                                                         </a>

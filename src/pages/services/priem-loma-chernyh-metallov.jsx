@@ -43,11 +43,17 @@ export default () => {
                     <div className="fit-back">
                         <h2 className="fit-back__title">Обратная связь</h2>
                         <div className="map"></div>
-                        <form className="fit-back__form" action="">
+                        <form
+                            className="fit-back__form"
+                            name="page-priem-loma-chernyh-metallov"
+                            data-netlify="true"
+                            method="post"
+                        >
                             <Field
                                 className="fit-back__form-cell"
                                 label="Name"
                                 placeholder="Имя*"
+                                name="name"
                                 isRequired
                             />
                             <Field
@@ -57,6 +63,7 @@ export default () => {
                                 type="tel"
                                 inputMode="tel"
                                 mask="+7 (000) 000-00-00"
+                                name="phone"
                                 isRequired
                             />
 

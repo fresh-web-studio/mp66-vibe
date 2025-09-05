@@ -34,7 +34,7 @@ export default () => {
                             className="fit-back__form-cell"
                             label="Name"
                             placeholder="Имя*"
-                            name="name"
+                            name="Name"
                             isRequired
                         />
                         <Field

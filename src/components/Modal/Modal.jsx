@@ -19,11 +19,16 @@ const Modal = () => {
                     </div>
                 </div>
 
-                <form className="fit-back__form" action="" method="dialog">
+                <form
+                    className="fit-back__form"
+                    name="modal"
+                    data-netlify="true"
+                    method="post">
                     <Field
                         className="fit-back__form-cell"
                         label="Name"
                         placeholder="Имя*"
+                        name="Name"
                         isRequired
                     />
                     <Field
@@ -31,6 +36,7 @@ const Modal = () => {
                         label="E-mail"
                         placeholder="E-mail*"
                         type="email"
+                        name="email"
                         isRequired
                     />
                     <Field
@@ -38,6 +44,7 @@ const Modal = () => {
                         label="Text"
                         type="textarea"
                         placeholder="Текст*"
+                        name="text"
                         isRequired
                     />
 

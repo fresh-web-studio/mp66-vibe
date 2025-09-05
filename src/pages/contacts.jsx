@@ -32,14 +32,14 @@ export default () => {
                     >
                         <Field
                             className="fit-back__form-cell"
-                            label="Name"
+                            label="Имя"
                             placeholder="Имя*"
                             name="Name"
                             isRequired
                         />
                         <Field
                             className="fit-back__form-cell"
-                            label="Phone"
+                            label="Телефон"
                             placeholder="+7 (999) 999-99-99*"
                             type="tel"
                             inputMode="tel"
@@ -57,7 +57,7 @@ export default () => {
                         />
                         <Field
                             className="fit-back__form-cell fit-back__form-cell--wide"
-                            label="Text"
+                            label="Текст соощения"
                             type="textarea"
                             placeholder="Текст*"
                             name="text"

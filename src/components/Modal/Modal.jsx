@@ -26,7 +26,7 @@ const Modal = () => {
                     method="post"
                 >
                     <input type="hidden" name="subject"
-                        value="Новый лид с сайта МеталлПром %{formName} (%{submissionId})" />
+                        value="Новый лид с сайта МеталлПром. Форма:%{formName} (%{submissionId})" />
                     <Field
                         className="fit-back__form-cell"
                         label="Имя:"

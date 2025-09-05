@@ -21,7 +21,7 @@ const Modal = () => {
 
                 <form
                     className="fit-back__form"
-                    name="modal"
+                    name="Модальное окно"
                     data-netlify="true"
                     method="post"
                 >

@@ -26,7 +26,7 @@ export default () => {
                     <div className="map"></div>
                     <form
                         className="fit-back__form"
-                        name="page-contacts"
+                        name="Страница контакты"
                         data-netlify="true"
                         method="post"
                     >

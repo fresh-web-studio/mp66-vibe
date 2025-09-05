@@ -39,7 +39,7 @@ export default () => {
                         <div className="map"></div>
                         <form
                             className="fit-back__form"
-                            name="page-demontazh-metalloloma"
+                            name="Страница демонтаж металлолома"
                             data-netlify="true"
                             method="post"
                         >

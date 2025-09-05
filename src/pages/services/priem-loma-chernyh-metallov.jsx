@@ -45,7 +45,7 @@ export default () => {
                         <div className="map"></div>
                         <form
                             className="fit-back__form"
-                            name="page-priem-loma-chernyh-metallov"
+                            name="Страница прием лома черных металлов"
                             data-netlify="true"
                             method="post"
                         >

@@ -26,14 +26,14 @@ const Modal = () => {
                     method="post">
                     <Field
                         className="fit-back__form-cell"
-                        label="Name"
+                        label="Имя:"
                         placeholder="Имя*"
                         name="Name"
                         isRequired
                     />
                     <Field
                         className="fit-back__form-cell"
-                        label="E-mail"
+                        label="E-mail:"
                         placeholder="E-mail*"
                         type="email"
                         name="email"
@@ -41,7 +41,7 @@ const Modal = () => {
                     />
                     <Field
                         className="fit-back__form-cell fit-back__form-cell--wide"
-                        label="Text"
+                        label="Текст соощения:"
                         type="textarea"
                         placeholder="Текст*"
                         name="text"

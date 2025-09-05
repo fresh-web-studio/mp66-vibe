@@ -60,14 +60,14 @@ export default () => {
                     >
                         <Field
                             className="fit-back__form-cell"
-                            label="Name"
+                            label="Имя:"
                             placeholder="Имя*"
                             name="name"
                             isRequired
                         />
                         <Field
                             className="fit-back__form-cell"
-                            label="Phone"
+                            label="Телефон:"
                             placeholder="+7 (999) 999-99-99*"
                             type="tel"
                             inputMode="tel"

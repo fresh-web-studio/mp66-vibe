@@ -105,7 +105,12 @@
               <h2 class="fit-back__title">Обратная связь</h2>
               <div class="map"></div>
               <form class="fit-back__form" name="Страница прием лома цветных металлов" data-netlify="true" method="post">
-                <input type="hidden" value="Новый лид с сайта МеталлПром %{formName} (%{submissionId})">
+                <div class="fit-back__form-cell field">
+                  <label class="field__label visually-hidden" for="тема:">Тема:<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+                  <div class="field__label">
+                    <input class="field__control" id="тема:" placeholder="Тема*" type="hidden" name="subject" required="" value="Новый лид с сайта МеталлПром %{formName} (%{submissionId})">
+                  </div>
+                </div>
                 <div class="fit-back__form-cell field">
                   <label class="field__label visually-hidden" for="имя:">Имя:<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
                   <div class="field__label">

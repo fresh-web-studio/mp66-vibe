@@ -56,8 +56,15 @@ export default () => {
                             data-netlify="true"
                             method="post"
                         >
-                            <input type="hidden"
-                                value="Новый лид с сайта МеталлПром %{formName} (%{submissionId})" />
+                            <Field
+                                className="fit-back__form-cell"
+                                label="Тема:"
+                                placeholder="Тема*"
+                                type="hidden"
+                                name="subject"
+                                value="Новый лид с сайта МеталлПром %{formName} (%{submissionId})"
+                                isRequired
+                            />
                             <Field
                                 className="fit-back__form-cell"
                                 label="Имя:"

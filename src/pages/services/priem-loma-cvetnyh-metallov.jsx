@@ -54,6 +54,7 @@ export default () => {
                             className="fit-back__form"
                             name="Страница прием лома цветных металлов"
                             data-netlify="true"
+                            action="/thank-you"
                             method="post"
                         >
                             <input type="hidden" name="subject"

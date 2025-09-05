@@ -23,6 +23,7 @@ const Modal = () => {
                     className="fit-back__form"
                     name="Модальное окно"
                     data-netlify="true"
+                    action="/thank-you"
                     method="post"
                 >
                     <input type="hidden" name="subject"

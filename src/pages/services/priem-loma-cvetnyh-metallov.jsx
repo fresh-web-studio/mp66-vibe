@@ -53,17 +53,14 @@ export default () => {
                         <form
                             className="fit-back__form"
                             name="Страница прием лома цветных металлов"
-                            data-netlify="true"
-                            action="/thank-you"
+                            action="../PHPmailer/smart.php"
                             method="post"
                         >
-                            <input type="hidden" name="subject"
-                                value="Новый лид с сайта МеталлПром. Форма:%{formName} (%{submissionId})" />
                             <Field
                                 className="fit-back__form-cell"
                                 label="Имя:"
                                 placeholder="Имя*"
-                                name="name"
+                                name="rm_name"
                                 isRequired
                             />
                             <Field
@@ -73,7 +70,7 @@ export default () => {
                                 type="tel"
                                 inputMode="tel"
                                 mask="+7 (000) 000-00-00"
-                                name="phone"
+                                name="rm_phone"
                                 isRequired
                             />
 

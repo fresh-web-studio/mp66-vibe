@@ -23,7 +23,9 @@
   "dependencies": {
     "@a1rth/css-normalize": "^1.1.9",
     "classnames": "^2.5.1",
+    "emailjs-com": "^3.2.0",
     "imask": "^7.6.1",
-    "swiper": "^11.1.15"
+    "swiper": "^11.1.15",
+    "vite-plugin-sitemap": "^0.8.2"
   }
 }

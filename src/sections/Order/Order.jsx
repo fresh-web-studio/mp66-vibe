@@ -10,9 +10,14 @@ const Order = () => {
                 Приедем, загрузим, увезем и оплатим!
             </div>
             <Button
-                className="order__button"
-                label="Заказать демонтаж/вывоз лома"
-                href="/eform/submit/order"
+                label="Заказать демонтаж / вывоз лома"
+                className="mail__button"
+                id="show-dialog-btn"
+                type="button"
+                onClick="modalMore.showModal"
+                extraAttrs={{
+                    'data-js-modal-more-button': '',
+                }}
             />
         </section>
     )

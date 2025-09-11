@@ -2,11 +2,35 @@ import Button from "@/components/Button"
 import Checkbox from "@/components/Checkbox"
 import Field from "@/components/Field"
 
+import { useState } from 'react'
+
 export const metadata = {
     title: 'Контакты - ',
 }
 
 export default () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+            .then(
+                result => {
+                    alert('Сообщение отправлено!');
+                    console.log(result.text);
+                },
+                error => {
+                    alert('Ошибка отправки. Попробуйте еще раз.');
+                    console.error(error.text);
+                }
+            );
+    };
+
     return (
         <>
             <div className="container non-home-page">
@@ -27,17 +51,14 @@ export default () => {
                     <form
                         className="fit-back__form"
                         name="Страница контакты"
-                        data-netlify="true"
-                        action="/thank-you"
+                        action="PHPmailer/smart.php"
                         method="post"
                     >
-                        <input type="hidden" name="subject"
-                            value="Новый лид с сайта МеталлПром. Форма:%{formName} (%{submissionId})" />
                         <Field
                             className="fit-back__form-cell"
                             label="Имя:"
                             placeholder="Имя*"
-                            name="Name"
+                            name="rm_name"
                             isRequired
                         />
                         <Field
@@ -47,7 +68,7 @@ export default () => {
                             type="tel"
                             inputMode="tel"
                             mask="+7 (000) 000-00-00"
-                            name="phone"
+                            name="rm_phone"
                             isRequired
                         />
                         <Field
@@ -55,7 +76,7 @@ export default () => {
                             label="E-mail:"
                             placeholder="E-mail*"
                             type="email"
-                            name="email"
+                            name="rm_mail"
                             isRequired
                         />
                         <Field
@@ -63,7 +84,7 @@ export default () => {
                             label="Текст соощения:"
                             type="textarea"
                             placeholder="Текст*"
-                            name="text"
+                            name="rm_text"
                             isRequired
                         />
 

@@ -1,5 +1,15 @@
-import { defineConfig } from 'minista'
-import path from 'path'
+import { defineConfig } from 'minista';
+import sitemap from 'vite-plugin-sitemap';
+import fs from 'fs';
+import path from 'path';
+
+
+// Вспомогательная функция для получения списка страниц
+const getPages = () => {
+  const pagesDirectory = path.join(process.cwd(), 'src/pages');
+  const pages = fs.readdirSync(pagesDirectory).filter(file => file.endsWith('.jsx')).map(file => file.replace(/\.jsx$/, ''));
+  return pages.map(page => `/${page}`);
+};
 
 export default defineConfig({
   root: '',
@@ -138,5 +148,14 @@ export default defineConfig({
       indent_size: 2,
     },
   },
-  vite: {},
-})
+  vite: {
+    plugins: [
+      sitemap({
+        hostname: 'https://mp66.ru', // Замените на ваш домен
+        ignoredFiles: ['/thank-you.html'], // Игнорируемые страницы
+        routes: getPages(), // Получаем список страниц автоматически
+        outDir: 'public', // Указываем папку public для вывода файлов
+      }),
+    ],
+  },
+});

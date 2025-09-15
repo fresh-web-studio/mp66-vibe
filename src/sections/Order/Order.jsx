@@ -9,6 +9,11 @@ const Order = () => {
             <div className="order__text">
                 Приедем, загрузим, увезем и оплатим!
             </div>
+            <div className="order__text">
+                Звоните нам:                     <a href="tel:%2B7%28912%29229-09-85">+7 (912) 229-09-85</a>, <a href="tel:%2B7%28912%29030-85-08">+7 (912) 030-85-08</a>
+
+            </div>
+            {/*
             <Button
                 label="Заказать демонтаж / вывоз лома"
                 className="mail__button"
@@ -19,6 +24,7 @@ const Order = () => {
                     'data-js-modal-more-button': '',
                 }}
             />
+            */}
         </section>
     )
 }

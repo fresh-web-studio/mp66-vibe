@@ -10,27 +10,6 @@ export const metadata = {
 
 export default () => {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-            .then(
-                result => {
-                    alert('Сообщение отправлено!');
-                    console.log(result.text);
-                },
-                error => {
-                    alert('Ошибка отправки. Попробуйте еще раз.');
-                    console.error(error.text);
-                }
-            );
-    };
-
     return (
         <>
             <div className="container non-home-page">
@@ -38,7 +17,7 @@ export default () => {
                 <div className="contacts">
                     <div className="contacts__city">Нижний Тагил</div>
                     <div>ул.Краснознаменная, 55</div>
-                    <div className="contacts__time">без выходных 9:00 - 19:00</div>
+                    <div className="contacts__time">без выходных 9:00 - 20:00</div>
                     <div className="contacts__tel">+7 (912) 229-09-85, +7 (912) 030-85-08</div>
                     <div className="contacts__mail">mail@mp66.ru</div>
                 </div>

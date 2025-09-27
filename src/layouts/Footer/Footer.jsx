@@ -21,7 +21,7 @@ const Footer = () => {
         {
             title: 'Работаем',
             icon: iconTime,
-            links: ['Без выходных 9:00 - 19:00'],
+            links: ['Без перерывов и выходных'],
         },
         {
             title: 'E-mail',
@@ -61,7 +61,9 @@ const Footer = () => {
             </div>
 
             <div className="map" style={{ display: 'none' }}>
+
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab28648cd7fde7627c53afec8d1d2ba035bf186325485620926a30e419cbc382f&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
+
             </div>
 
             <div className="footer__inner container">
@@ -71,7 +73,9 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
+            {/*
             <Modal />
+            */}
         </footer>
 
     )

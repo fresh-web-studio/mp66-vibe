@@ -3,3 +3,8 @@ Thumbs.db
 db.json
 *.log
 node_modules
+/public/edit/
+/public/PHPmailer/
+dist
+dist/edit
+dist/PHPmailer

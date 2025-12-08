@@ -40,10 +40,10 @@ const generateMarketXml = (rows) => {
 
   rows.forEach((row, index) => {
     const cols = row.split('|');
-    const category = cols[0].trim();
-    const name = cols[1].trim();
-    const composition = cols[2].trim();
-    const price = cols[3].trim();
+    const category = cols[0].trim().replace(/ /g, ' '); // Замена   на пробел
+    const name = cols[1].trim().replace(/ /g, ' ');
+    const composition = cols[2].trim().replace(/ /g, ' ');
+    const price = cols[3].trim().replace(/ /g, ' ');
 
     // Проверяем, является ли цена числом и не пуста
     if (!isNaN(price) && price.trim() !== '') {
@@ -88,4 +88,4 @@ fs.writeFileSync(xmlPath, xmlContent, 'utf-8');
 
 // Выводим в консоль дату и время до секунд и успешное сообщение
 const now = getFormattedDateTime(); // Используем ту же функцию для Екатеринбурга
-console.log(`${now}: Файл market.xml успешно создан.`);
+console.log(`${now} - Файл market.xml успешно создан.`);

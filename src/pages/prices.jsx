@@ -41,9 +41,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>15500</p>
+                                    <p className='prices__price'>16500</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Черный Металл</span></td>
                                 <td><span className='prices__composition'>5А</span></td>
@@ -55,9 +56,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>14500</p>
+                                    <p className='prices__price'>15500</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Черный Металл</span></td>
                                 <td><span className='prices__composition'>12А</span></td>
@@ -69,9 +71,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>14500</p>
+                                    <p className='prices__price'>15500</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Черный Металл</span></td>
                                 <td><span className='prices__composition'>22А</span></td>
@@ -82,9 +85,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>14400</p>
+                                    <p className='prices__price'>15500</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Черный Металл</span></td>
                                 <td><span className='prices__composition'>Копанка</span></td>
@@ -94,9 +98,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>11500</p>
+                                    <p className='prices__price'>12000</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Черный Металл</span></td>
                                 <td><span className='prices__composition'>Скраб</span></td>
@@ -106,9 +111,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>5500</p>
+                                    <p className='prices__price'>6500</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
                                 <td><span className='prices__composition'>Медь Блеск</span></td>
@@ -118,9 +124,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>770</p>
+                                    <p className='prices__price'>780</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
                                 <td><span className='prices__composition'>Медь микс</span></td>
@@ -130,9 +137,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>740</p>
+                                    <p className='prices__price'>760</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
                                 <td><span className='prices__composition'>Медь лужёная</span></td>
@@ -142,9 +150,10 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>665</p>
+                                    <p className='prices__price'>675</p>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
                                 <td><span className='prices__composition'>Медь стружка</span></td>
@@ -154,214 +163,229 @@ export default () => {
                                     </p>
                                 </td>
                                 <td>
-                                    <p className='prices__price'>625</p>
+                                    <p className='prices__price'>635</p>
                                 </td>
-                                <tr>
-                                    <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                    <td><span className='prices__composition'>Латунь</span></td>
-                                    <td className='hidden-mobile'>
-                                        <p className='prices__description'>
+                            </tr>
 
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p className='prices__price'>460</p>
-                                    </td>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Латунь стружка</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Латунь</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>340</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Латунь радиаторы</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>460</p>
+                                </td>
+                            </tr>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>425</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Алюминий</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Латунь стружка</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>130</p>
-                                        </td>
-                                    </tr>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>340</p>
+                                </td>
+                            </tr>
 
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Алюминий первичка</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Латунь радиаторы</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>180</p>
-                                        </td>
-                                    </tr>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>425</p>
+                                </td>
+                            </tr>
 
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Алюминий стружка</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Алюминий</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>40</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Алюминий (радиатор)</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>130</p>
+                                </td>
+                            </tr>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>55</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>АКБ (полипропилен) </span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Алюминий первичка</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>45</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>АКБ (эбонит)</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>180</p>
+                                </td>
+                            </tr>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>35</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Свинец (груза)</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Алюминий стружка</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>80</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Свинец (листовой)</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>40</p>
+                                </td>
+                            </tr>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>120</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Нержавейка</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Алюминий (радиатор)</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>50</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Магний</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>55</p>
+                                </td>
+                            </tr>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>65</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Цинк</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>АКБ (полипропилен) </span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>150</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Титан</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>45</p>
+                                </td>
+                            </tr>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>190</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
-                                        <td><span className='prices__composition'>Электродвигатели</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>АКБ (эбонит)</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>60</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Остальное</span></td>
-                                        <td><span className='prices__composition'>А также действуют спец цены, согласовываются индивидуально.</span></td>
-                                        <td className='hidden-mobile'>
-                                            <p className='prices__description'>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>35</p>
+                                </td>
+                            </tr>
 
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p className='prices__price'>Цена не указана</p>
-                                        </td>
-                                    </tr>
-                                </tr>
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Свинец (груза)</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>80</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Свинец (листовой)</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>120</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Нержавейка</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>50</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Магний</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>65</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Цинк</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>150</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Титан</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>130</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Цветной Металл</span></td>
+                                <td><span className='prices__composition'>Электродвигатели</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>60</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td className='hidden-tablet hidden-mobile'><span className='prices-category'>Остальное</span></td>
+                                <td><span className='prices__composition'>А также действуют спец цены, согласовываются индивидуально.</span></td>
+                                <td className='hidden-mobile'>
+                                    <p className='prices__description'>
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className='prices__price'>Цена не указана</p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

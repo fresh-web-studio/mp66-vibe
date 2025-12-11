@@ -161,7 +161,7 @@
 
             &.is-active {
                 background-color: var(--color-base);
-                color: var(--color-white);
+                color: var(--color-red);
                 pointer-events: none;
 
                 @include mobile {
@@ -181,7 +181,7 @@
 
             @include mobile-above {
                 @include hover {
-                    color: var(--color-white);
+                    color: var(--color-red);
                     background-color: var(--color-base);
                 }
             }
@@ -258,7 +258,7 @@
 
         &:hover {
             background-color: var(--color-base);
-            color: var(--color-white);
+            color: var(--color-red);
         }
     }
 

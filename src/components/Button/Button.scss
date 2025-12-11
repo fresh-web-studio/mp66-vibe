@@ -2,7 +2,7 @@
     @include flex-center(true);
     padding: fluid-to-laptop(22, 19) fluid-to-laptop(34, 22);
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-red);
     background-color: var(--color-base);
     border-color: var(--color-base);
     border: 1px solid transparent;
@@ -12,7 +12,7 @@
     width: max-content;
 
     @include hover {
-        color: var(--color-white);
+        color: var(--color-red);
         background-color: var(--color-hover);
     }
 

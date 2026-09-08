@@ -2,9 +2,14 @@
 Thumbs.db
 db.json
 *.log
+.env
+.env.local
+.env.production
 node_modules
-/public/edit/
+/public/api/
+/public/edit-old/
 /public/PHPmailer/
 dist
-dist/edit
+dist/edit-old
 dist/PHPmailer
+/api/

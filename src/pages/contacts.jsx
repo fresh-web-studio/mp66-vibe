@@ -17,9 +17,9 @@ export default () => {
                 <div className="contacts">
                     <div className="contacts__city">Нижний Тагил</div>
                     <div>ул.Краснознаменная, 55</div>
-                    <div className="contacts__time">без выходных 9:00 - 20:00</div>
+                    <div className="contacts__time">без выходных 9:00 - 19:00</div>
                     <div className="contacts__tel">+7 (912) 229-09-85, +7 (912) 030-85-08</div>
-                    <div className="contacts__mail">mail@mp66.ru</div>
+                    <div className="contacts__mail">89120405551@mail.ru</div>
                 </div>
                 <div className="map">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab28648cd7fde7627c53afec8d1d2ba035bf186325485620926a30e419cbc382f&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>

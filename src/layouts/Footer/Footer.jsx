@@ -6,6 +6,7 @@ import iconMail from '@/assets/icons/mail.svg'
 import Modal from '@/components/Modal'
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     const menuItems = [
         {
             title: 'Адреса',
@@ -26,8 +27,8 @@ const Footer = () => {
         {
             title: 'E-mail',
             icon: iconMail,
-            links: ['mail@mp66.ru'],
-            href: ['mailto:mail@mp66.ru'],
+            links: ['89120405551@mail.ru'],
+            href: ['mailto:89120405551@mail.ru'],
         },
     ]
 
@@ -69,7 +70,13 @@ const Footer = () => {
             <div className="footer__inner container">
                 <div className="footer__extra">
                     <p className="footer__copyright">
-                        © OOO «Компания Металлпром», <time datatime="2017-2025">2017-2025</time>. <a className="footer__extra-links" href="/security">Политика информационной безопасности</a>
+                        © OOO «Компания Металлпром»,{' '}
+                        {/* В datetime ставим конкретный год, в тексте показываем диапазон */}
+                        <time dateTime={currentYear}>2017-{currentYear}</time>{' '}
+
+                        <a className="footer__extra-links" href="/security">
+                            Политика информационной безопасности
+                        </a>
                     </p>
                 </div>
             </div>

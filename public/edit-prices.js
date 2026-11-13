@@ -220,8 +220,22 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!res.ok) throw new Error('HTTP ' + res.status);
             return res.json();
         })
+        .then(function() {
+            // После сохранения обновляем market.xml
+            return fetch('/api/index.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'generate-market' }),
+                credentials: 'include'
+            });
+        })
+        .then(function(res) { return res.json(); })
         .then(function(result) {
-            showMessage('✓ Цены успешно сохранены!', false);
+            if (result.success) {
+                showMessage(result.message || '✓ Цены успешно сохранены!');
+            } else {
+                showMessage('✕ Ошибка: ' + (result.error || 'Не удалось сохранить'), true);
+            }
         })
         .catch(function(err) {
             showMessage('✕ Ошибка: ' + err.message, true);

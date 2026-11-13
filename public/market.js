@@ -1,29 +1,47 @@
 const fs = require('fs');
+const path = require('path');
 
-// Путь к HTML-странице с ценами (относительно текущего рабочего каталога)
-const htmlPath = '/home/a202509271/web/mp66.ru/public_html/prices.html';
+// Путь к dist папке (market.js лежит в корне, dist рядом)
+const distDir = path.join(__dirname, 'dist');
+const xmlPath = path.join(distDir, 'market.xml');
 
-// Путь к результирующему XML-файлу (относительно текущего рабочего каталога)
-const xmlPath = '/home/a202509271/web/mp66.ru/public_html/market.xml';
+// URL API для получения цен (передаётся через переменную окружения)
+const apiUrl = process.env.API_URL || 'http://localhost/api/index.php';
 
-// Читаем HTML-страницу
-const html = fs.readFileSync(htmlPath, 'utf-8');
-
-// Функция для преобразования даты и времени в формат YYYY-MM-DD hh:mm
 function getFormattedDateTime() {
-  const date = new Date();
-  const yyyy = String(date.getFullYear());
-  const MM = String(date.getMonth() + 1).padStart(2, '0');
-  const dd = String(date.getDate()).padStart(2, '0');
-  const hh = String(date.getHours()).padStart(2, '0');
-  const mm = String(date.getMinutes()).padStart(2, '0');
-
-  return `${yyyy}-${MM}-${dd} ${hh}:${mm}`;
+    const date = new Date();
+    const yyyy = String(date.getFullYear());
+    const MM = String(date.getMonth() + 1).padStart(2, '0');
+    const dd = String(date.getDate()).padStart(2, '0');
+    const hh = String(date.getHours()).padStart(2, '0');
+    const mm = String(date.getMinutes()).padStart(2, '0');
+    return `${yyyy}-${MM}-${dd} ${hh}:${mm}`;
 }
 
-// Функция для генерации XML-файла
-const generateMarketXml = (rows) => {
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>
+function escapeXml(str) {
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+}
+
+async function generateMarketXml() {
+    try {
+        // Получаем данные из API
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error('HTTP ' + response.status);
+        }
+
+        const prices = await response.json();
+
+        if (!Array.isArray(prices) || prices.length === 0) {
+            throw new Error('Нет данных для генерации');
+        }
+
+        let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
 <yml_catalog date="${getFormattedDateTime()}">
   <shop>
@@ -38,54 +56,44 @@ const generateMarketXml = (rows) => {
     </categories>
     <offers>`;
 
-  rows.forEach((row, index) => {
-    const cols = row.split('|');
-    const category = cols[0].trim().replace(/ /g, ' '); // Замена   на пробел
-    const name = cols[1].trim().replace(/ /g, ' ');
-    const composition = cols[2].trim().replace(/ /g, ' ');
-    const price = cols[3].trim().replace(/ /g, ' ');
+        prices.forEach((item, index) => {
+            const price = parseInt(item.price);
+            if (isNaN(price) || price === 0) return;
 
-    // Проверяем, является ли цена числом и не пуста
-    if (!isNaN(price) && price.trim() !== '') {
-      xml += `
-        <offer id="${index + 1}" available="true">
+            const name = escapeXml(item.name || '');
+            const description = escapeXml(item.description || '');
+            const category = escapeXml(item.category || '');
+
+            xml += `
+        <offer id="${item.id}" available="true">
           <name>${name}</name>
           <price>${price}</price>
           <currencyId>RUR</currencyId>
           <categoryId>1</categoryId>
-          <description>${composition}</description>
+          <description>${description}</description>
           <param name="Категория">${category}</param>
-          <param name="Состав">${composition}</param>
+          <param name="Состав">${description}</param>
         </offer>`;
-    }
-  });
+        });
 
-  xml += `
+        xml += `
     </offers>
   </shop>
 </yml_catalog>`;
 
-  return xml;
-};
+        // Создаём папку dist если нет
+        if (!fs.existsSync(distDir)) {
+            fs.mkdirSync(distDir, { recursive: true });
+        }
 
-// Обработка HTML-файла с помощью регулярных выражений
-let matches = html.match(/<tr[^>]*>\s*(.*?)<\/tr>/gs);
-let rows = [];
+        // Записываем XML
+        fs.writeFileSync(xmlPath, xml, 'utf-8');
 
-// Пропускаем первую строку (заголовки колонок)
-for (let i = 1; i < matches.length; i++) {
-  let tds = matches[i].match(/<td[^>]*>\s*(.*?)\s*<\/td>/gs);
-  if (tds.length === 4) {
-    rows.push(tds.map(td => td.replace(/<(.*?)>/g, '').replace(/\s+/g, ' ').trim()).join('|'));
-  }
+        console.log(`${getFormattedDateTime()} - Файл market.xml успешно создан (${prices.length} записей).`);
+    } catch (err) {
+        console.error('Ошибка:', err.message);
+        process.exit(1);
+    }
 }
 
-// Генерируем XML-файл
-const xmlContent = generateMarketXml(rows);
-
-// Записываем файл на сервер
-fs.writeFileSync(xmlPath, xmlContent, 'utf-8');
-
-// Выводим в консоль дату и время до секунд и успешное сообщение
-const now = getFormattedDateTime(); // Используем ту же функцию для Екатеринбурга
-console.log(`${now} - Файл market.xml успешно создан.`);
+generateMarketXml();
